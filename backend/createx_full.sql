@@ -312,24 +312,24 @@ INSERT INTO users (role_id, full_name, email, phone, password_hash) VALUES
 (1, 'Annette Black',  'annette@mail.com',   '(405) 555-0102', crypt('user123',  gen_salt('bf'))),
 (1, 'Albert Flores',  'albert@mail.com',    '(405) 555-0103', crypt('user123',  gen_salt('bf')));
 
--- Офисы ---------------------------------------------------------------
+-- contacts ---------------------------------------------------------------
 INSERT INTO offices (city, address, phone, email, schedule, is_head) VALUES
 ('New York',      '8502 Preston Rd. Inglewood, New York 98380',      '(405) 555-0128', 'hello@createx.com', 'Mon - Fri 9:00 - 18:00',  TRUE),
 ('New Jersey',    '2464 Royal Ln. Mesa, New Jersey 45463',           '(808) 555-0111', 'hello@createx.com', 'Mon - Fri 9:00 - 18:00',  FALSE),
 ('San Francisco', '8502 Preston Rd. Inglewood, San Francisco 98380', '(505) 555-0125', 'hello@createx.com', 'Mon - Fri 10:00 - 19:00', FALSE);
 
--- Команда -------------------------------------------------------------
+-- about us -------------------------------------------------------------
 INSERT INTO team_members (full_name, position, photo_url, sort_order) VALUES
-('Courtney Alexander', 'CEO, Co-Founder',             '/img/team/courtney.jpg', 1),
-('Calvin Fox',         'CTO, Co-Founder',             '/img/team/calvin.jpg',   2),
-('Johnny Lane',        'Commercial Manager',          '/img/team/johnny.jpg',   3),
-('Diane Mccoy',        'Director of Human Resources', '/img/team/diane.jpg',    4),
-('Judith Warren',      'Lead Accountant',             '/img/team/judith.jpg',   5),
-('Floyd Simmmons',     'Financial Director',          '/img/team/floyd.jpg',    6),
-('Serenity Edwards',   'Director of Marketing',       '/img/team/serenity.jpg', 7),
-('Shawn Edwards',      'Tech Lead',                   '/img/team/shawn.jpg',    8);
+('Courtney Alexander', 'CEO, Co-Founder',             '/src/assets/courtney.png', 1),
+('Calvin Fox',         'CTO, Co-Founder',             '/src/assets/calvin.png',   2),
+('Johnny Lane',        'Commercial Manager',          '/src/assets/johnny.png',   3),
+('Diane Mccoy',        'Director of Human Resources', '/src/assets/diane.png',    4),
+('Judith Warren',      'Lead Accountant',             '/src/assets/judith.png',   5),
+('Floyd Simmmons',     'Financial Director',          '/src/assets/floyd.png',    6),
+('Serenity Edwards',   'Director of Marketing',       '/src/assets/serenity.png', 7),
+('Shawn Edwards',      'Tech Lead',                   '/src/assets/shawn.png',    8);
 
--- История -------------------------------------------------------------
+-- about us -------------------------------------------------------------
 INSERT INTO company_history (event_date, title, description) VALUES
 ('2000-06-01', 'Company founded',        'Createx Construction Bureau starts operating in the USA.'),
 ('2001-10-01', 'First big contract',     'First large commercial contract completed.'),
@@ -341,7 +341,7 @@ INSERT INTO company_history (event_date, title, description) VALUES
 ('2019-03-01', 'Industry award',         'Recognized among the best construction companies in the USA.'),
 ('2020-06-01', 'Present',                '20 years of experience in construction.');
 
--- Цифры ---------------------------------------------------------------
+-- home about us ---------------------------------------------------------------
 INSERT INTO statistics (page, value, label, sort_order) VALUES
 ('home',  '98%',      'Totally satisfied clients',              1),
 ('home',  '20',       'Years of experience',                    2),
@@ -352,40 +352,40 @@ INSERT INTO statistics (page, value, label, sort_order) VALUES
 ('about', '670',      'Qualified specialists',                  3),
 ('about', '150000+ m2', 'Finishing work was carried out',       4);
 
--- Ценности / преимущества / бонусы -----------------------------------
+-- home service avaible -----------------------------------
 INSERT INTO advantages (section, title, description, sort_order) VALUES
-('core_value',       'Quality',               'Culpa nostrud commodo ea consequat aliquip reprehenderit.', 1),
-('core_value',       'Safety',                'Anim reprehenderit sint voluptate exercitation adipisicing laborum.', 2),
-('core_value',       'Comfort',               'Sit veniam aute dolore adipisicing nulla sit culpa.', 3),
-('benefit',          'Fixed Terms & Cost',    'Culpa nostrud commodo ea consequat aliquip reprehenderit.', 1),
-('benefit',          'Qualified Workers',     'Anim reprehenderit sint voluptate exercitation adipisicing laborum.', 2),
-('benefit',          'Supervision & Control', 'Sit veniam aute dolore adipisicing nulla sit culpa.', 3),
-('employee_benefit', 'Training',              'Culpa nostrud commodo ea consequat aliquip reprehenderit.', 1),
-('employee_benefit', 'Professional Growth',   'Anim reprehenderit sint voluptate exercitation adipisicing laborum.', 2),
-('employee_benefit', 'Growing Salary',        'Sit veniam aute dolore adipisicing nulla sit culpa.', 3);
+('core_value',       'Quality',               'Culpa nostrud commodo ea consequat aliquip reprehenderit.', '/src/assets/like2.png', 1),
+('core_value',       'Safety',                'Anim reprehenderit sint voluptate exercitation adipisicing laborum.', '/src/assets/hand.png', 2),
+('core_value',       'Comfort',               'Sit veniam aute dolore adipisicing nulla sit culpa.', '/src/assets/slippers.png', 3),
+('benefit',          'Fixed Terms & Cost',    'Culpa nostrud commodo ea consequat aliquip reprehenderit.', '/src/assets/project1.png', 1),
+('benefit',          'Qualified Workers',     'Anim reprehenderit sint voluptate exercitation adipisicing laborum.', '/src/assets/project2.png', 2),
+('benefit',          'Supervision & Control', 'Sit veniam aute dolore adipisicing nulla sit culpa.', '/src/assets/project3.png', 3),
+('employee_benefit', 'Training',              'Culpa nostrud commodo ea consequat aliquip reprehenderit.', '/src/assets/brain.png', 1),
+('employee_benefit', 'Professional Growth',   'Anim reprehenderit sint voluptate exercitation adipisicing laborum.', '/src/assets/success.png', 2),
+('employee_benefit', 'Growing Salary',        'Sit veniam aute dolore adipisicing nulla sit culpa.', '/src/assets/budget.png', 3);
 
 -- Партнёры и клиенты --------------------------------------------------
 INSERT INTO partners (name, logo_url) VALUES
-('BuildCorp',      '/img/partners/1.png'),
-('Urban Council',  '/img/partners/2.png'),
-('Industry Media', '/img/partners/3.png'),
-('Eco Builders',   '/img/partners/4.png');
+('BuildCorp',      '/src/assets/1.png'),
+('Urban Council',  '/src/assets/2.png'),
+('Industry Media', '/src/assets/3.png'),
+('Eco Builders',   '/src/assets/4.png');
 
 INSERT INTO clients (name, logo_url) VALUES
 ('Skyline Group', '/img/clients/1.png'),
 ('Metro Estates', '/img/clients/2.png'),
 ('Green Homes',   '/img/clients/3.png');
 
--- Услуги --------------------------------------------------------------
+-- services --------------------------------------------------------------
 INSERT INTO services (title, slug, short_text, description, image_url) VALUES
-('Construction',        'construction',        'Full-cycle construction of buildings.',      'Sapien, feugiat faucibus orci arcu, vulputate. Tristique varius consectetur vulputate arcu.', '/img/services/construction.jpg'),
-('Project Development', 'project-development', 'Design and planning of your project.',      'Volutpat tellus mauris sit sit. Posuere ut sit vestibulum amet viverra in.',                 '/img/services/project.jpg'),
-('Interior Design',     'interior-design',     'Interior design for apartments and houses.', 'Eleifend orci massa et facilisis orci feugiat ac. Congue in ut lacus, turpis accumsan gravida.', '/img/services/interior.jpg'),
-('Repairs',             'repairs',             'Repairs of any complexity.',                 'Facilisis cursus feugiat sit pulvinar amet. Ac facilisi dictum commodo, tortor gravida.',     '/img/services/repairs.jpg');
+('Construction',        'construction',        'Full-cycle construction of buildings.',      'Sapien, feugiat faucibus orci arcu, vulputate. Tristique varius consectetur vulputate arcu.', '/src/assets/construction.png'),
+('Project Development', 'project-development', 'Design and planning of your project.',      'Volutpat tellus mauris sit sit. Posuere ut sit vestibulum amet viverra in.',                 '/src/assets/project.png'),
+('Interior Design',     'interior-design',     'Interior design for apartments and houses.', 'Eleifend orci massa et facilisis orci feugiat ac. Congue in ut lacus, turpis accumsan gravida.', '/src/assets/interior.png'),
+('Repairs',             'repairs',             'Repairs of any complexity.',                 'Facilisis cursus feugiat sit pulvinar amet. Ac facilisi dictum commodo, tortor gravida.',     '/src/assets/repairs.png');
 
 INSERT INTO service_offers (service_id, title, description) VALUES
-(3, 'Interior design of apartments',     'Adipiscing nunc arcu enim elit mattis eu placerat proin.'),
-(3, 'Interior design of private houses', 'Imperdiet elementum faucibus dignissim purus.');
+(3, 'Interior design of apartments',     'Adipiscing nunc arcu enim elit mattis eu placerat proin. Imperdiet elementum faucibus dignissim purus. Fusce parturient diam magna ullamcorper morbi semper massa ac facilisis.'),
+(3, 'Interior design of private houses', '');
 
 INSERT INTO service_steps (service_id, step_number, title, description) VALUES
 (3, 1, 'Work Estimate',        'Culpa nostrud commodo ea consequat aliquip reprehenderit.'),
@@ -393,7 +393,7 @@ INSERT INTO service_steps (service_id, step_number, title, description) VALUES
 (3, 3, 'Mobilization',         'Odio massa scelerisque purus arcu sed velit eleifend cursus leo.'),
 (3, 4, 'Construction Work',    'Adipisicing esse aliqua aliquip qui amet.');
 
--- Тарифы Interior Design ---------------------------------------------
+--  не буду Тарифы Interior Design ---------------------------------------------
 INSERT INTO pricing_plans (service_id, name, price_per_m2, term_days) VALUES
 (3, 'BASIC',    20, 10),
 (3, 'STANDARD', 30, 20),
@@ -417,12 +417,12 @@ INSERT INTO plan_features (plan_id, feature_id, note) VALUES
 -- BUSINESS
 (3, 1, NULL), (3, 2, NULL), (3, 3, NULL), (3, 4, NULL), (3, 5, NULL), (3, 6, NULL), (3, 7, NULL), (3, 8, NULL);
 
--- Категории проектов --------------------------------------------------
-INSERT INTO project_categories (name) VALUES
+-- portfolio --------------------------------------------------
+откуда это INSERT INTO project_categories (name) VALUES
 ('Business Centers'),   -- 1
 ('Apartments & flats'), -- 2
 ('Private houses'),     -- 3
-('Stores & Malls');     -- 4
+('Stores & Malls');     -- 4  
 
 -- Проекты (service_id: 1 Construction, 2 Project Dev., 3 Interior, 4 Repairs)
 INSERT INTO projects
@@ -450,7 +450,7 @@ INSERT INTO testimonials (project_id, author_name, position, company, text) VALU
 (4, 'Shawn Edwards', 'Position', 'Company name', 'Ipsum aute sunt aliquip aute et occaecat. Anim minim do cillum eiusmod enim. Consectetur magna cillum consequat minim laboris cillum laboris voluptate minim proident exercitation ullamco.'),
 (NULL, 'Darlene Robertson', 'Owner', 'Private client', 'Great team, everything was finished on time and within the budget.');
 
--- Вакансии ------------------------------------------------------------
+-- avaible ------------------------------------------------------------
 INSERT INTO vacancies (office_id, title, employment_type) VALUES
 (1, 'Heavy Equipment Operator',    'Full Time'),
 (3, 'Financial Compliance Analyst','Full Time'),
