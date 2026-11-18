@@ -353,7 +353,7 @@ INSERT INTO statistics (page, value, label, sort_order) VALUES
 ('about', '150000+ m2', 'Finishing work was carried out',       4);
 
 -- home service avaible -----------------------------------
-INSERT INTO advantages (section, title, description, sort_order) VALUES
+INSERT INTO advantages (section, title, description, icon_url, sort_order) VALUES
 ('core_value',       'Quality',               'Culpa nostrud commodo ea consequat aliquip reprehenderit.', '/src/assets/like2.png', 1),
 ('core_value',       'Safety',                'Anim reprehenderit sint voluptate exercitation adipisicing laborum.', '/src/assets/hand.png', 2),
 ('core_value',       'Comfort',               'Sit veniam aute dolore adipisicing nulla sit culpa.', '/src/assets/slippers.png', 3),
@@ -418,7 +418,7 @@ INSERT INTO plan_features (plan_id, feature_id, note) VALUES
 (3, 1, NULL), (3, 2, NULL), (3, 3, NULL), (3, 4, NULL), (3, 5, NULL), (3, 6, NULL), (3, 7, NULL), (3, 8, NULL);
 
 -- portfolio --------------------------------------------------
-откуда это INSERT INTO project_categories (name) VALUES
+INSERT INTO project_categories (name) VALUES
 ('Business Centers'),   -- 1
 ('Apartments & flats'), -- 2
 ('Private houses'),     -- 3
